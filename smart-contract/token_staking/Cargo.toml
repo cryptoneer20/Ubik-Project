@@ -1,0 +1,24 @@
+[package]
+name = "token_staking"
+version = "0.1.0"
+description = "Token staking of Ubik"
+repository = "https://github.com/smartcontractkit/solana-example"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "token_staking"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+spl-token = { version="4.0.1", features = [ "no-entrypoint" ] }
+
+[profile.release]
+overflow-checks = true

@@ -1,0 +1,20 @@
+[programs.devnet]
+staking = "C6wGW14B9SUBsG1xVENNvtCeyBgBzbfzbaVaLTtCEuwc"
+token_staking = "8h6FVYBoSNKYVMRKp7DvjHdkvkcyrK8ug8TibtiSorkc"
+
+[programs.mainnet]
+staking = "C6wGW14B9SUBsG1xVENNvtCeyBgBzbfzbaVaLTtCEuwc"
+token_staking = "8h6FVYBoSNKYVMRKp7DvjHdkvkcyrK8ug8TibtiSorkc"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[workspace]
+members = [
+	"staking",
+	"token_staking"
+]
